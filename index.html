@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KDA School — Achievements & Highlights</title>
+  <style>
+    :root{
+      --accent:#FFD700; /* gold */
+      --muted:#bfbfbf;
+      --glass: rgba(255,255,255,0.06);
+    }
+    html,body{height:100%;}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:#000; /* black background as requested */
+      color:#fff;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+    }
+    .container{
+      max-width:1100px;
+      margin:40px auto;
+      padding:24px;
+    }
+    header{
+      display:flex;
+      gap:20px;
+      align-items:center;
+      border-bottom:1px solid rgba(255,255,255,0.06);
+      padding-bottom:18px;
+    }
+    .logo{
+      width:86px;height:86px;border-radius:8px;overflow:hidden;flex:0 0 86px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+    }
+    .logo img{width:100%;height:100%;object-fit:cover;display:block}
+    h1{font-size:28px;margin:0}
+    p.lead{color:var(--muted);margin:6px 0 0}
+
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 360px;
+      gap:24px;
+      margin-top:26px;
+    }
+
+    /* main card */
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:12px;padding:18px;box-shadow:0 6px 30px rgba(0,0,0,0.6);
+      border:1px solid rgba(255,255,255,0.03);
+    }
+    h2{margin-top:0;color:var(--accent)}
+
+    .gallery{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+    .gallery img{width:calc(50% - 4px);height:140px;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,0.04)}
+
+    .stat-row{display:flex;gap:12px;margin-top:14px}
+    .stat{flex:1;background:var(--glass);padding:12px;border-radius:10px;text-align:center}
+    .stat strong{display:block;font-size:20px;color:var(--accent)}
+    .muted{color:var(--muted);font-size:13px}
+
+    aside .card{position:sticky;top:28px}
+    .interest-list{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+    .interest-item{display:flex;gap:12px;align-items:center}
+    .avatar{width:56px;height:56px;border-radius:8px;overflow:hidden;flex:0 0 56px}
+    .avatar img{width:100%;height:100%;object-fit:cover}
+    .small-meta{font-size:13px;color:var(--muted)}
+
+    footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center}
+
+    /* responsiveness */
+    @media (max-width:900px){
+      .grid{grid-template-columns:1fr;}
+      .gallery img{width:calc(33.333% - 5.333px);height:100px}
+      .logo{width:72px;height:72px}
+    }
+
+    /* subtle buttons */
+    .btn{
+      display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);
+      background:transparent;color:#fff;text-decoration:none;font-weight:600;font-size:14px
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="https://source.unsplash.com/featured/?school,building" alt="KDA School building" />
+      </div>
+      <div>
+        <h1>KDA School — Achievements & Community Highlights</h1>
+        <p class="lead">A showcase of KDA School’s milestones, student success, and what makes our community proud. Updated: 2025</p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card">
+          <h2>About KDA School</h2>
+          <p>KDA School is a community-focused institution committed to academic excellence, practical skills, and character development. We serve students from primary through secondary levels and offer a balanced curriculum combining STEM, arts, sports, and community service. Our mission is to produce curious, capable, and compassionate graduates who contribute positively to society.</p>
+
+          <div class="stat-row">
+            <div class="stat">
+              <strong>96%</strong>
+              <div class="muted">Graduation Rate (last year)</div>
+            </div>
+            <div class="stat">
+              <strong>120+</strong>
+              <div class="muted">Community Projects Completed</div>
+            </div>
+            <div class="stat">
+              <strong>8</strong>
+              <div class="muted">National Awards</div>
+            </div>
+          </div>
+
+          <h2 style="margin-top:20px">Recent Achievements</h2>
+          <ul>
+            <li><strong>National Coding Challenge — 1st Place:</strong> KDA students won the national inter-school coding tournament with an AI-driven attendance assistant.</li>
+            <li><strong>Green Campus Certification:</strong> Solar panels and a rainwater harvesting system reduced campus energy usage by 34%.</li>
+            <li><strong>Community Health Drive:</strong> Over 2,000 residents served during the annual health outreach led by the school's volunteer corps.</li>
+            <li><strong>Art & Culture Festival:</strong> Student performances attracted visitors from across the region and raised funds for library expansion.</li>
+          </ul>
+
+          <h2 style="margin-top:20px">Photo Gallery</h2>
+          <div class="gallery">
+            <img src="https://source.unsplash.com/featured/?school,students" alt="Students at KDA" />
+            <img src="https://source.unsplash.com/featured/?school,classroom" alt="Classroom activity" />
+            <img src="https://source.unsplash.com/featured/?school,library" alt="Library" />
+            <img src="https://source.unsplash.com/featured/?school,sports" alt="Sports day" />
+          </div>
+
+          <h2 style="margin-top:20px">Why These Achievements Matter</h2>
+          <p>Achievements are not only trophies or certificates; they reflect a combination of strong leadership, supportive families, and engaged students. Each success fuels further improvement — attracting better teachers, more resources, and partnerships with organizations that provide internships and scholarships for KDA students.</p>
+
+        </section>
+
+        <section class="card" style="margin-top:18px">
+          <h2>Customer & Employee (Community) Interest</h2>
+          <p>We value both our customers (families, alumni, donors) and employees (teachers, staff) equally. Here’s how we keep them engaged and informed:</p>
+          <ul>
+            <li><strong>Regular Newsletters:</strong> Monthly updates highlighting student achievements, calendar events, and opportunities to support projects.</li>
+            <li><strong>Open Days & Workshops:</strong> Prospective families and community partners visit the campus to see demonstrations and student showcases.</li>
+            <li><strong>Staff Professional Development:</strong> Continuous training enables teachers to adopt modern teaching practices and digital tools.</li>
+            <li><strong>Feedback Channels:</strong> Surveys, suggestion boxes, and parent-teacher forums ensure voices are heard and used to refine programs.</li>
+          </ul>
+
+          <p style="margin-top:12px" class="muted">Note: "Customer interest" here refers to parents, guardians, alumni and local partners who support and evaluate the school. Employee interest refers to staff engagement, retention, and professional growth.</p>
+        </section>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <h2>Who’s Interested?</h2>
+          <p class="muted">Stakeholders who follow KDA School closely</p>
+
+          <ul class="interest-list" style="margin-top:12px">
+            <li class="interest-item">
+              <div class="avatar"><img src="https://source.unsplash.com/featured/?teacher" alt="Teacher"></div>
+              <div>
+                <div><strong>Teachers & Staff</strong></div>
+                <div class="small-meta">Focus on curriculum, student wellbeing, and training</div>
+              </div>
+            </li>
+
+            <li class="interest-item">
+              <div class="avatar"><img src="https://source.unsplash.com/featured/?parent" alt="Parent"></div>
+              <div>
+                <div><strong>Parents & Guardians</strong></div>
+                <div class="small-meta">Interested in safety, academic progress, and extracurriculars</div>
+              </div>
+            </li>
+
+            <li class="interest-item">
+              <div class="avatar"><img src="https://source.unsplash.com/featured/?student" alt="Student"></div>
+              <div>
+                <div><strong>Students</strong></div>
+                <div class="small-meta">Want engaging lessons, mentorship and career guidance</div>
+              </div>
+            </li>
+
+            <li class="interest-item">
+              <div class="avatar"><img src="https://source.unsplash.com/featured/?volunteer" alt="Volunteer"></div>
+              <div>
+                <div><strong>Local Partners & Donors</strong></div>
+                <div class="small-meta">Support programs, internships, and infrastructure
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div style="margin-top:14px;text-align:center">
+            <a class="btn" href="#contact">Get involved</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h2>Contact & Visit</h2>
+          <p class="muted">Planning a visit or want to support a program? Reach out.</p>
+          <p style="margin:0;margin-top:10px"><strong>Email:</strong> admissions@kdaschool.example</p>
+          <p style="margin:0"><strong>Phone:</strong> +250 700 000 000</p>
+          <p style="margin-top:10px" class="muted">Address: KDA Rd, City, Country</p>
+        </div>
+
+      </aside>
+    </div>
+
+    <footer>
+      <div class="muted">© KDA School • Excellence, Integrity, Service.</div>
+    </footer>
+  </div>
+</body>
+</html>
